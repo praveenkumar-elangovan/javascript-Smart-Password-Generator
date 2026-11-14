@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Password Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="generator-card">
+
+            <div class="logo">
+                <span>🔐</span>
+            </div>
+
+            <h1>Smart Password Generator</h1>
+
+            <p class="subtitle">
+                Create strong and secure passwords instantly.
+            </p>
+
+            <!-- Password Display -->
+
+            <div class="password-box">
+                <input
+                    type="text"
+                    id="password"
+                    placeholder="Your password will appear here"
+                    readonly
+                >
+
+                <button id="copyBtn" class="copy-btn" title="Copy password">
+                    Copy
+                </button>
+            </div>
+
+            <!-- Password Strength -->
+
+            <div class="strength-section">
+                <div class="strength-info">
+                    <span>Password Strength</span>
+                    <span id="strengthText">Not Generated</span>
+                </div>
+
+                <div class="strength-bar">
+                    <div id="strengthFill"></div>
+                </div>
+            </div>
+
+            <!-- Password Length -->
+
+            <div class="option-section">
+
+                <div class="length-info">
+                    <label for="length">Password Length</label>
+                    <span id="lengthValue">12</span>
+                </div>
+
+                <input
+                    type="range"
+                    id="length"
+                    min="6"
+                    max="32"
+                    value="12"
+                >
+
+            </div>
+
+            <!-- Character Options -->
+
+            <div class="option-section">
+
+                <h3>Customize Password</h3>
+
+                <label class="checkbox-option">
+                    <input type="checkbox" id="uppercase" checked>
+                    <span>Uppercase Letters (A-Z)</span>
+                </label>
+
+                <label class="checkbox-option">
+                    <input type="checkbox" id="lowercase" checked>
+                    <span>Lowercase Letters (a-z)</span>
+                </label>
+
+                <label class="checkbox-option">
+                    <input type="checkbox" id="numbers" checked>
+                    <span>Numbers (0-9)</span>
+                </label>
+
+                <label class="checkbox-option">
+                    <input type="checkbox" id="symbols" checked>
+                    <span>Special Characters (@#$%)</span>
+                </label>
+
+            </div>
+
+            <!-- Generate Button -->
+
+            <button id="generateBtn" class="generate-btn">
+                Generate Password
+            </button>
+
+            <p id="message" class="message"></p>
+
+            <div class="footer">
+                Secure your digital world 🔒
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

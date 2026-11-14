@@ -1,0 +1,253 @@
+
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #080d19;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Main Container */
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+
+    background:
+        radial-gradient(circle at top left, #172b50 0%, transparent 35%),
+        radial-gradient(circle at bottom right, #25154b 0%, transparent 35%),
+        #080d19;
+}
+
+/* Generator Card */
+
+.generator-card {
+    width: 100%;
+    max-width: 470px;
+    padding: 35px;
+    background: rgba(19, 29, 49, 0.95);
+    border: 1px solid #293750;
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+/* Logo */
+
+.logo {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6558f5, #9b5cf6);
+    border-radius: 18px;
+    font-size: 30px;
+    box-shadow: 0 8px 25px rgba(101, 88, 245, 0.3);
+}
+
+/* Heading */
+
+h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #9ba9c0;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Password Box */
+
+.password-box {
+    display: flex;
+    align-items: center;
+    background: #0b1323;
+    border: 1px solid #34435d;
+    border-radius: 12px;
+    padding: 8px;
+    gap: 8px;
+}
+
+.password-box input {
+    width: 100%;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #70e6bc;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.password-box input::placeholder {
+    color: #718099;
+    font-size: 12px;
+}
+
+.copy-btn {
+    background: #283a57;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.copy-btn:hover {
+    background: #6558f5;
+}
+
+/* Strength Section */
+
+.strength-section {
+    margin-top: 22px;
+}
+
+.strength-info,
+.length-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #aebbd0;
+}
+
+#strengthText {
+    font-weight: 600;
+    color: #f4c45e;
+}
+
+.strength-bar {
+    height: 7px;
+    background: #293750;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#strengthFill {
+    width: 0%;
+    height: 100%;
+    background: #f4c45e;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Options Section */
+
+.option-section {
+    margin-top: 28px;
+}
+
+.option-section h3 {
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.length-info span {
+    color: #9b8bff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Range Slider */
+
+input[type="range"] {
+    width: 100%;
+    accent-color: #8274ff;
+    cursor: pointer;
+}
+
+/* Checkbox Options */
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 17px;
+    font-size: 14px;
+    color: #c2ccdc;
+    cursor: pointer;
+}
+
+.checkbox-option input {
+    width: 17px;
+    height: 17px;
+    accent-color: #8274ff;
+    cursor: pointer;
+}
+
+/* Generate Button */
+
+.generate-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 11px;
+    background: linear-gradient(135deg, #6558f5, #9b5cf6);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.generate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(101, 88, 245, 0.35);
+}
+
+/* Message */
+
+.message {
+    min-height: 20px;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 13px;
+    color: #70e6bc;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 12px;
+    color: #718099;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 500px) {
+
+    .generator-card {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .password-box input {
+        font-size: 13px;
+    }
+
+}
